@@ -19,7 +19,7 @@ parser.add_argument("something", help="Folder name")
 args = parser.parse_args()
 # View all folders and file in your Google Drive
 fileList = drive.ListFile({
-        'q': "'0AEWapxTnVfbZUk9PVA' in parents and trashed=false",
+        'q': "'1JL10euIKvhBuncBUbWBSu4gNrWG_QpwO' in parents and trashed=false",
         'corpora': "teamDrive",
         'teamDriveId': "0AEWapxTnVfbZUk9PVA",
         'includeTeamDriveItems': "true",
