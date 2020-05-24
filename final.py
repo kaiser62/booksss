@@ -8,7 +8,7 @@ from pydrive.drive import GoogleDrive
 from google.colab import auth
 from oauth2client.client import GoogleCredentials
 import argparse
-
+import sys
 
 auth.authenticate_user()
 gauth = GoogleAuth()
@@ -30,4 +30,4 @@ for file in fileList:
  if(file['title'] == (args.something)):
     fileID = file['id']
     a = str(('%s' % (file['id'])))
-print('%s' % a)
+sys.stdout.write('%s' % a)
